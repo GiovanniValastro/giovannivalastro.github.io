@@ -1,0 +1,169 @@
+.face {
+    animation: move-down 4s;
+}
+
+@keyframes move-down {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.presentation {
+    animation: scale 4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+    from {transform: scale(0.1, 0.1);}
+
+    to {
+        transform: scale(1, 1);}
+}
+
+.title.reveal.active {
+    animation-name: wipe-enter;
+    animation-duration: 2s;
+    visibility: visible;
+}
+
+@keyframes wipe-enter {
+	0% {
+		transform: scale(0.2, .025);
+	}
+	50% {
+        transform: scale(1, .025);
+	}
+}
+
+.progress.color-html .progress-right .reveal.active,
+.progress.color-css .progress-right .reveal.active {
+    animation: loading-1 3s linear forwards;
+    -webkit-animation: loading-1 3s linear forwards;
+    -moz-animation: loading-1 3s linear forwards;
+}
+
+@keyframes loading-1 {
+    0%{
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+}
+
+.progress.color-html .progress-left .reveal.active {
+    animation: loading-2 1.2s linear forwards 3s;
+    -webkit-animation: loading-2 1.2s linear forwards 3s;
+    -moz-animation: loading-2 1.2s linear forwards 3s;
+}
+
+@keyframes loading-2 {
+  0%{
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100%{
+      -webkit-transform: rotate(72deg);
+      transform: rotate(72deg);
+  }
+}
+
+.progress.color-js .progress-right .reveal.active,
+.progress.color-php .progress-right .reveal.active,
+.progress.color-mysql .progress-right .reveal.active{
+    animation: loading-3 3s linear forwards;
+    -webkit-animation: loading-3 3s linear forwards;
+    -moz-animation: loading-3 3s linear forwards;
+}
+
+@keyframes loading-3 {
+  0%{
+      -webkit-transform: rotate(0deg); 
+      transform: rotate(0deg);
+  }
+  100%{
+      -webkit-transform: rotate(72deg);
+      transform: rotate(72deg);
+  }
+}
+
+.progress.color-wordpress .progress-right .reveal.active,
+.progress.color-nodejs .progress-right .reveal.active,
+.progress.color-java .progress-right .reveal.active{
+    animation: loading-4 3s linear forwards;
+    -webkit-animation: loading-4 3s linear forwards;
+    -moz-animation: loading-4 3s linear forwards;
+}
+
+@keyframes loading-4 {
+  0%{
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+  }
+  100%{
+      -webkit-transform: rotate(36deg);
+      transform: rotate(36deg);
+  }
+}  
+
+.img-interests .reveal.active {
+    animation: fade-in 4s;
+    -moz-animation: fade-in 4s;
+    -webkit-animation: fade-in 4s;
+    visibility: visible;
+}
+
+@keyframes fade-in {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.img-project .border-img.reveal.active {
+    animation: move-on 3s;
+    visibility: visible;
+}
+
+@keyframes move-on {
+    from {
+        transform: translateY(300px);
+        opacity: 0;
+    } to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.project-text.reveal.active {
+    animation: fade-in-2 6s;
+    visibility: visible;
+}
+
+@keyframes fade-in-2 {
+    0%{opacity: 0;}
+    50%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.card-face-front img {
+    -webkit-animation: scale-infinite 1s infinite alternate;
+    -moz-animation: scale-infinite 1s infinite alternate;
+    animation: scale-infinite 1s infinite alternate;
+}
+
+@keyframes scale-infinite {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        transform: scale(2.0);
+        -webkit-transform: scale(1.3);
+    }
+}
+  
